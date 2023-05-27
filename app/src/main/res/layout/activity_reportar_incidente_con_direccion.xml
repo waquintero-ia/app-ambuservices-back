@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ReportarIncidenteConDireccion">
+
+    <Button
+        android:id="@+id/reportarIncidenteDir"
+        android:layout_width="249dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="guardar"
+        android:text="REPORTAR INCIDENTE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="332dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Dirección"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <TextView
+        android:id="@+id/Numeral"
+        android:layout_width="56dp"
+        android:layout_height="31dp"
+        android:text="#"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="82dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <EditText
+        android:id="@+id/numero5"
+        android:layout_width="82dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="82dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Numero"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <TextView
+        android:id="@+id/numeral"
+        android:layout_width="56dp"
+        android:layout_height="31dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

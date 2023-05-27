@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Menu">
+
+    <Button
+        android:id="@+id/misViajes"
+        android:layout_width="249dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="MIS VIAJES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <Button
+        android:id="@+id/solicitarOtraAmbulancia"
+        android:layout_width="249dp"
+        android:layout_height="63dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="SOLICITAR OTRA AMBULANCIA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <Button
+        android:id="@+id/bitacoraIncidenteActual"
+        android:layout_width="248dp"
+        android:layout_height="63dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="BITACORA INCIDENTE ACTUAL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <Button
+        android:id="@+id/bitacoras"
+        android:layout_width="249dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="BITACORAS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

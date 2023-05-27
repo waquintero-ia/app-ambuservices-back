@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ambuservices"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.CreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ListaUsuarios"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CompartirBitacora"
+            android:exported="false" />
+        <activity
+            android:name=".activities.BitacoraIncidenteActual"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Bitacoras"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MisViajes"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Menu"
+            android:exported="false" />
+        <activity
+            android:name=".activities.VistaPrincipalAmbulancia"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Ambulancia"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ReporteExitoso"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CategoriaIncidente"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ReportarIncidenteConDireccion"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Registro"
+            android:exported="false" />
+        <activity
+            android:name=".activities.VistaPrincipalReportero"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RecuperarContrasenia"
+            android:exported="false" />
+        <activity
+            android:name=".activities.InicioReportero"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

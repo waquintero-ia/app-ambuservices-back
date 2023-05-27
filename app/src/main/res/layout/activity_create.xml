@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CreateActivity">
+    
+    <EditText
+        android:id="@+id/nombreCompletoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre Completo"/>
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Correo Electronico"/>
+
+    <EditText
+        android:id="@+id/celularText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="Celular"/>
+
+    <EditText
+        android:id="@+id/contraseniaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Contraseña"/>
+
+    <EditText
+        android:id="@+id/confirmacionContraseniaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Confirmacion Contraseña"/>
+    
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Crate"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/baseline_add_circle_outline_24"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
