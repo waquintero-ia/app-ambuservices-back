@@ -56,9 +56,12 @@ public class DetailActivity extends AppCompatActivity implements DeleteInterface
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Toast toast = Toast.makeText(getApplicationContext(),empleado.getNombreCompleto() + " deleted!!", Toast.LENGTH_LONG);
+                //toast.show();
 
                 //showDeleteDialog(empleado.getId());
                 delete(id);
+                callMain();
             }
 
         });
@@ -127,7 +130,7 @@ public class DetailActivity extends AppCompatActivity implements DeleteInterface
                 empleado=response.body();
                 Toast toast = Toast.makeText(getApplicationContext(),empleado.getNombreCompleto() + " deleted!!", Toast.LENGTH_LONG);
                 toast.show();
-                callMain();
+                //callMain();
             }
 
             @Override
@@ -138,6 +141,11 @@ public class DetailActivity extends AppCompatActivity implements DeleteInterface
             }
         });
 
+    }
+
+    private void callMain() {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
     }
 
     private CrudEmpleadoInterface getCruempleado(){
@@ -159,8 +167,5 @@ public class DetailActivity extends AppCompatActivity implements DeleteInterface
 
         return cruempleado;
     }*/
-    private void callMain() {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-    }
+
 }
