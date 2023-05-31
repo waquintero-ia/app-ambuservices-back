@@ -51,14 +51,14 @@ public class DetailActivity extends AppCompatActivity implements DeleteInterface
         confirmacionContraseniaText = findViewById(R.id.confirmacionContraseniaText);
         Long id = Long.valueOf(getIntent().getExtras().getInt("id"));
         getOne(id);
-        delete(id);
+        //delete(id);
         deleteButton= findViewById(R.id.deleteButton);
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                showDeleteDialog(empleado.getId());
-                //delete(id);
+                //showDeleteDialog(empleado.getId());
+                delete(id);
             }
 
         });
@@ -159,7 +159,7 @@ public class DetailActivity extends AppCompatActivity implements DeleteInterface
 
         return cruempleado;
     }*/
-    private void callMain(){
+    private void callMain() {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
     }
